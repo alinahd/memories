@@ -1,0 +1,63 @@
+body {
+  background-color: white;
+  color: rgb(1, 0, 0); 
+  margin: -4px;
+}
+
+.blackTitles {
+  color: black;
+  font-family: cursive;
+  font-size: 55px;
+  text-align: center;
+}
+  
+p {
+  font-size: 14px;
+  line-height: 21px; 
+}
+
+.imagecontainer {
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+}
+
+.image {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 3s
+}
+
+.image-back {
+  opacity: 0;
+}
+
+.image-container:hover .image-front {
+  opacity: 0;
+}
+
+.image-container:hover .image-back {
+  opacity: 1;
+}
+/* unvisited link  */
+a:link {
+  color: rgb(225, 64, 117);
+}
+
+/* visited link */
+a:visited {
+  color: palevioletred;
+}
+
+/* mouse over link */
+a:hover {
+  color: pink;
+}
+
+/* selected link */
+a:active {
+  color: plum;
+}
