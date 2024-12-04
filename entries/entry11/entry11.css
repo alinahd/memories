@@ -1,0 +1,174 @@
+header {
+    background: linear-gradient(135deg, #ffb6c1, #ffd1dc, #ffcc99);
+    padding: 80px 20px 40px;
+    text-align: center;
+    color: white;
+  }
+
+  body {
+    cursor: url('cursor.png') 16 16, auto;
+  }
+  
+  h1 {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro {
+    font-style: italic;
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .memory {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Lora', serif;
+    text-align: left;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 1%;
+    line-height: 1.8;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align the content to the top */
+}
+
+.memory-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.memory-content p {
+    flex: 1;
+    max-width: 60%; /* Adjust to control the text width */
+    padding-right: 20px; /* Add space between the text and the image */
+}
+
+.floating-img {
+    max-width: 40%; /* Control the image size */
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .floating-img {
+    max-width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  .makeup-palette {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e91e63;
+  }
+  
+  .color-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  #palette:not(.hidden) .color-circle {
+    opacity: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+
+@media (max-width: 768px) {
+    header {
+      padding: 40px 20px;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .intro {
+      font-size: 1.1rem;
+    }
+  
+    .memory {
+      padding: 20px;
+      margin-top: 10px;
+    }
+  
+    .memory-content {
+      display: block;
+      text-align: left;
+    }
+  
+    .memory-content p {
+      max-width: 100%;
+      padding-right: 0;
+      text-align: left;
+    }
+  
+    .floating-img {
+      max-width: 80%; /* Make images larger on small screens */
+      margin: 20px 0;
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .makeup-palette {
+      margin-top: 20px;
+    }
+  
+    button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  
+    .color-circle {
+      width: 50px;
+      height: 50px;
+    }
+  }
+ 

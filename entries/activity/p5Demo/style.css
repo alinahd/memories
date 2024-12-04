@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #ffccf2;
+  padding: 20px;
+  font-size: 36px;
+  color: #ff66b2;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px;
+}
+
+.dresser {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.mirror {
+  width: 180px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.reflection {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.makeup-items button {
+  background-color: #ff66b2;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.makeup-items button:hover {
+  background-color: #ff3385;
+}
+
+.drawers button {
+  background-color: #ff99cc;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.drawers button:hover {
+  background-color: #ff66b2;
+}
+
+.memory-lane {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #ff66b2;
+}
+
+footer p {
+  margin-bottom: 20px;
+}

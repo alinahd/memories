@@ -1,0 +1,67 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Container for the page content */
+.splash-container {
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  color: #DF4D8D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+}
+
+/* Styling for the h1 (page header) */
+h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Water Droplet Styling */
+.droplet {
+  position: absolute;
+  background-color: rgba(52, 152, 219, 0.7);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: splash-animation 1.5s forwards;
+}
+
+/* Keyframes for droplet animation with random motion */
+@keyframes splash-animation {
+  0% {
+      transform: translate(0, 0);
+      opacity: 1;
+      width: 15px;
+      height: 15px;
+      filter: blur(0);
+  }
+  50% {
+      opacity: 0.6;
+      transform: translate(var(--x), var(--y)) scale(0.8);
+      filter: blur(2px);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(var(--x2), var(--y2)) scale(0.5);
+      filter: blur(4px);
+  }
+}

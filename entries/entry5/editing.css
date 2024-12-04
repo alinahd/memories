@@ -1,0 +1,77 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF7E1;
+    color: brown;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+.amiri-bold {
+    color:brown;
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 56px;
+    text-align: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-container > div {
+    width: 100%;
+    text-align: left;
+    line-height: 1.5; 
+    padding: 30px;
+  }
+
+.photo-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+.photo-strip .photo {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.photo-strip .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-strip, .footer-strip {
+  animation: slideInFromLeft 30s linear infinite;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+img {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
