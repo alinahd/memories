@@ -3,12 +3,6 @@ body {
     background-color: rgb(242, 239, 226)   
 }
 
-body {
-    cursor: url('imgs8/wave.png') 16 16, auto;
-}
-
-
-
 .title {
     transform: rotate(-90deg);
     text-align: left;
@@ -41,7 +35,7 @@ body {
     width: -20px;
     font-weight: 550;
     scale: 1;
-    margin-top: 25%;
+    margin-top: 20%;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;

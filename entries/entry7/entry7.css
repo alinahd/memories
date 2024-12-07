@@ -1,46 +1,32 @@
-
-.hover-outline {
-    transition: outline 0.3s ease;
-    align-items: center;
-    width: 1430px;
-    margin-right: 50%;
+body{
+    background-color: #fff7e1;
 }
-
-.hover-outline:hover {
-    outline: 5px solid blue; 
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    background-color: #a50a0a;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: flex;
-    color: white;
+h1{
+    padding-top: 1%;
+    color: #a50a0a;
     text-align: center;
-    padding: 10px;
-    justify-self: space-around;
+    font-size: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-  }
-  
-  li a:hover {
-    background-color: #c41010;
-  }
+}
+p{
+    margin-top: 9%;
+    color: #a50a0a;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 6%;
+    padding-right: 6%;
+}
 
-  .rotate-wrapper {
+.rotate-wrapper {
+    cursor: grabbing;
     display: inline-block; 
     animation: rotate 5s linear infinite; 
     width: 280px; 
     position: relative; 
+   padding-left: 4%;
 }
 
 .rotate {
@@ -49,6 +35,39 @@ ul {
     border-radius: 50%; 
 }
 
+.rotate:hover {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .grid-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding-left: 76%;
+    
+  }
+
+.icon{
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    position: fixed;
+  }
+  
 @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -61,6 +80,13 @@ ul {
     width: 160px;
     position: relative;
   }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: auto;
+        padding: -10%;
+        margin-left: -33%;
+        object-fit: cover;
+  }
 }
-
 

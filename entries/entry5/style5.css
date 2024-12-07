@@ -1,13 +1,5 @@
-  
-  p {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  
 body {
   background-color: #fff7e1; 
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 4%;
 }
 
@@ -18,61 +10,89 @@ body {
   font-style: normal;
   font-size: 56px;
   text-align: center;
+  margin-top: 0%;
+  margin-bottom: 2%;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
+.introduction {
+  font-family: "Amiri", serif;
+  line-height: 1.5;
+  color:brown;
+  font-size: 20px;
 }
-
-.flex-container > div {
-  width: 100%;
-  text-align: left;
-  line-height: 1.5; 
-  padding: 30px;
-}
-
 
 .photo-strip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 30px 0;
 }
 
-.photo-strip .photo {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
-  margin-right: 10px;
-  border-radius: 8px;
-  overflow: hidden;
+.photo-strip-container {
+    display: flex;
+    animation: scroll 20s linear infinite; 
+    
 }
 
-.photo-strip .photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.photo {
+    flex-shrink: 0;
+    width: 280px;
+    height: 300px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% { 
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+ }
+
+ .icon {
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  position: fixed;
 }
 
 
-.header-strip, .footer-strip {
-  animation: slideInFromLeft 30s linear infinite;
-}
-
-
-@@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
+ @media (max-width: 768px) {
+  body {
+    padding: 3%;
   }
-  100% {
-    transform: translateX(0);
+  
+  .amiri-bold {
+    font-size: 48px;
+    margin-bottom: 4%;
   }
-}
 
-img {
-  animation: slideInFromLeft 1s ease-out forwards;
-}
+  .photo-strip-container {
+    animation: scroll 15s linear infinite;
+  }
+
+  .photo {
+    width: 220px; 
+    height: 240px;
+    margin-right: 8px;
+  }
+
+  .introduction {
+    font-size: 18px;
+  }
+
+  .introduction p {
+    margin-bottom: 1.5rem;
+  }
+
+ 

@@ -1,5 +1,5 @@
 body {
-    background-color: #dfded9;
+    background-color: #fff7e1;
 }
 
 .title {
@@ -10,6 +10,15 @@ body {
     font-style: normal;
     animation: color_change 5s infinite ease-in-out;
     font-size: xx-large;
+}
+
+.icon{
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    position: fixed;
 }
 
 @keyframes color_change {
@@ -67,13 +76,28 @@ body {
 }
 
 @media (max-width: 768px) {
-    .images, .images2 {
-        width: 100%;
-        height: auto;
-        margin: 5px;
+    .images {
+        grid-template-columns: repeat(1, 1fr);
+        display: block;
     }
 
     .image-container {
         justify-content: center; 
     }
+
+    .paragraph1, .paragraph2 {
+        font-size: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .paragraph2 {
+        margin-top: 470%;
+    }
+     .icon {
+        width: 40px;
+        height: 40px;
+    }
 }
+
+

@@ -30,4 +30,25 @@ h1{
     line-height: 1.5; 
     padding: 30px;
   }
-  
+
+  @media (max-width: 768px) {
+    body {
+      padding-left: 4%;
+      padding-right: 4%;
+      font-size: 18px; 
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .flex-container {
+      flex-direction: column;
+    }
+    
+    .flex-container > div {
+      width: 100%;
+      padding: 15px; 
+      }
+  }
+

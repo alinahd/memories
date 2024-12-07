@@ -68,3 +68,42 @@ a:hover {
 a:active {
   color: plum;
 }
+
+.icon{
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  position: fixed;
+}
+
+
+@media (max-width: 768px) {
+  .blackTitles {
+    font-size: 45px;
+  }
+  .paragraph {
+    font-size: 24px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .images {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+  }
+  .step-container img {
+    width: 80%;
+    height: auto;
+  }
+  img[src="imgs4/pinkheader.jpg"] {
+    width: 100%;
+    height: auto;
+  }
+  img[src="imgs4/pinkborder.jpg"] {
+    width: 100%;
+    height: auto;
+  }
+}
