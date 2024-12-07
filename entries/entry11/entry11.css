@@ -104,15 +104,6 @@ p {
     transition: background-color 0.3s ease;
   }
 
-.icon{
-    bottom: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    position: fixed;
-  }
-
 button:hover {
     background-color: #e91e63;
   }
@@ -134,7 +125,16 @@ button:hover {
   .hidden {
     display: none;
   }
-  
+
+.icon{
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    position: fixed;
+  }
+
   @media (max-width: 768px) {
     header {
         padding: 40px 20px;
